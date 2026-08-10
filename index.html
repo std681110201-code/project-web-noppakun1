@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผู้จัดทำ | Noppakun</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Segoe UI",Tahoma,sans-serif;
+  background:linear-gradient(135deg,#111827,#1f2937 55%,#111827);
+  color:#fff;min-height:100vh;
+}
+nav{
+  width:100%;padding:20px 7%;display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid #ffffff18;
+  background:#0b0f17cc;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5
+}
+.logo{font-size:22px;font-weight:800;color:#f59e0b}
+nav a{color:#ddd;text-decoration:none;margin-left:25px;transition:.3s}
+nav a:hover{color:#f59e0b}
+.container{width:min(1100px,90%);margin:55px auto}
+.card{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center;
+  padding:35px;border:1px solid #ffffff18;border-radius:28px;
+  background:#ffffff0b;box-shadow:0 25px 70px #0008;backdrop-filter:blur(10px)
+}
+.photo{position:relative}
+.photo img{
+  width:100%;display:block;border-radius:22px;box-shadow:0 20px 50px #0009;
+  transition:.4s
+}
+.photo img:hover{transform:scale(1.02)}
+.photo:after{
+  content:"";position:absolute;inset:15px;border:1px solid #f59e0b80;
+  border-radius:18px;pointer-events:none
+}
+.tag{
+  display:inline-block;padding:8px 14px;border-radius:30px;
+  background:#f59e0b1a;color:#fbbf24;border:1px solid #f59e0b55;
+  font-size:14px;margin-bottom:18px
+}
+h1{font-size:clamp(35px,5vw,62px);line-height:1.05;margin-bottom:15px}
+h1 span{color:#f59e0b}
+.subtitle{font-size:20px;color:#d1d5db;margin-bottom:25px}
+.info{display:grid;gap:12px;margin:25px 0}
+.info p{
+  padding:13px 16px;background:#ffffff08;border-radius:12px;
+  border-left:3px solid #f59e0b;color:#ddd
+}
+.btn{
+  display:inline-block;text-decoration:none;color:#111827;background:#f59e0b;
+  padding:13px 24px;border-radius:12px;font-weight:700;transition:.3s
+}
+.btn:hover{background:#fbbf24;transform:translateY(-3px)}
+footer{text-align:center;color:#9ca3af;padding:25px}
+@media(max-width:800px){
+  nav{padding:16px 5%}.links a{margin-left:10px;font-size:14px}
+  .container{margin:30px auto}.card{grid-template-columns:1fr;padding:20px;gap:30px}
+  h1{font-size:42px}
+}
+@media(max-width:480px){
+  .logo{font-size:18px}.links a{font-size:12px;margin-left:7px}
+  .card{border-radius:20px}.photo img{border-radius:16px}
+  h1{font-size:35px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">MY PORTFOLIO</div>
+  <div class="links">
+    <a href="index.html">หน้าแรก</a>
+    <a href="#author">ผู้จัดทำ</a>
+  </div>
+</nav>
+
+<main class="container" id="author">
+  <section class="card">
+    <div class="photo">
+      <img src="artist.jpg" alt="ภาพผู้จัดทำกำลังวาดภาพ">
+    </div>
+
+    <div class="content">
+      <div class="tag">ABOUT THE CREATOR</div>
+      <h1>นาย <span>นพคุณ บุญส่ง</span></h1>
+      <p class="subtitle">ผู้จัดทำเว็บไซต์ • นักเรียนสาขาเทคโนโลยีสารสนเทศ</p>
+
+      <div class="info">
+        <p><b>ชื่อ:</b> นาย นพคุณ บุญส่ง</p>
+        <p><b>ระดับชั้น:</b> ปวช. 2/10</p>
+        <p><b>สาขา:</b> เทคโนโลยีสารสนเทศ</p>
+        <p><b>หน้าที่:</b> ออกแบบและพัฒนาเว็บไซต์</p>
+      </div>
+
+      <a class="btn" href="index.html">กลับหน้าหลัก</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Noppakun Boonsong | Web Project</footer>
+</body>
+</html>
